@@ -1,40 +1,45 @@
-<div class="Top">
-  <div class="header">
-    <h1>Home Page Sample</h1>
-    <ul>
-      <a href="#">
-        <li>Home</li>
-      </a>
-      <a href="#">
-        <li>About</li>
-      </a>
-      <a href="#">
-        <li>Topics</li>
-      </a>
-    </ul>
-  </div>
-  <div class="main">
-    <h2 id="1">ホームページの作り方</h2>
-    <p>ホームページの作り方を解説中です。ここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入ります</p>
-    <h2 id="2">あーーーーー</h2>
-    <p>いいいいいいいいいいいいいいいいいいいい？！いいいいいいいいいいいいいいいいいいいい？！いいいいいいいいいいいいいいいいいいいい？！いいいいいいいいいいいいいいいいいいいい？！いいいいいいいいいいいいいいいいいいいい？！いいいいいいいいいいいいいいいいいいいい？！いいいいいいいいいいいいいいいいいいいい？！いいいいいいいいいいいいいいいいいいいい？！いいいいいいいいいいいいいいいいいいいい？！いいいいいいいいいいいいいいいいいいいい？！いいいいいいいいいいいいいいいいいいいい？！</p>
-    <h2 id="3">眠たい</h2>
-    <p>早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな早く寝たいな</p>
-  </div>
-  <div class="submenu">
-    <ul>
-      <a href="#1">
-        <li>ホームページの作り方</li>
-      </a>
-      <a href="#2">
-        <li>あーーーー</li>
-      </a>
-      <a href="#3">
-        <li>眠たい</li>
-      </a>
-    </ul>
-  </div>
-  <div class="footer">
-    &copy;2022 Charme
-  </div>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* メニューボタンのスタイル */
+        .menu-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* メニューの初期状態（非表示）のスタイル */
+        .menu {
+            display: none;
+        }
+
+        /* メニューが表示されたときのスタイル */
+        .menu.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <button class="menu-button" id="menuButton">メニュー</button>
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="#">メニュー項目1</a></li>
+            <li><a href="#">メニュー項目2</a></li>
+            <li><a href="#">メニュー項目3</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // メニューボタンをクリックしたときにメニューを表示・非表示するためのJavaScript
+        const menuButton = document.getElementById('menuButton');
+        const menu = document.getElementById('menu');
+
+        menuButton.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
