@@ -1,48 +1,19 @@
-body {
-  background-color: coral;
+/* メニューボタンのスタイル */
+.menu-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
-.Top {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header header"
-    "main submenu"
-    "footer footer";
+
+/* メニューの初期状態（非表示）のスタイル */
+.menu {
+    display: none;
 }
-.header {
-  grid-area: header;
-  display: flex;
-  background-color: brown;
-  color: orange;
-  align-items: center;
+
+/* メニューが表示されたときのスタイル */
+.menu.active {
+    display: block;
 }
-.header ul {
-  display: flex;
-  list-style: none;
-}
-.header a {
-  text-decoration: none;
-  color: orange;
-  margin: 0 30px;
-}
-.main {
-  grid-area: main;
-  color: ghostwhite;
-}
-.submenu {
-  grid-area: submenu;
-  border: solid 5px;
-  background-color: darkgrey;
-}
-.submenu a {
-  text-decoration: none;
-  color: ghostwhite;
-}
-.footer {
-  grid-area: footer;
-  background-color: silver;
-  height: 50px;
-  padding-top: 25px;
-  text-align: center;
-}
+
