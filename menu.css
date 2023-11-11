@@ -1,19 +1,21 @@
-/* メニューボタンのスタイル */
-.menu-button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
 
-/* メニューの初期状態（非表示）のスタイル */
-.menu {
-    display: none;
-}
-
-/* メニューが表示されたときのスタイル */
-.menu.active {
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: dimgray;
+    padding-top: 5px;
+    box-sizing: border-box;
+  }
+  ul {
+    display: flex;
+  }
+  li {
+    list-style: none;
+  }
+  a {
     display: block;
-}
+    text-decoration: none;
+    color: white;
+    margin-right: 35px;
+  }
 
